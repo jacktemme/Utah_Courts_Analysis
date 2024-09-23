@@ -124,7 +124,7 @@
       <column caption='Uniqueid' datatype='integer' name='[uniqueid]' role='measure' type='quantitative' />
       <column-instance column='[highest_severity_rank]' derivation='None' name='[none:highest_severity_rank:ok]' pivot='key' type='ordinal' />
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_1h23vol0pvrrx813sgaw30s0wd1y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_0fvg5311nzhhkn1ev2qqc1n12jyu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/23/2024 07:06:35 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
@@ -140,6 +140,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>97347</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>highest_severity_rank</remote-name>
@@ -153,6 +154,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>max_charge</remote-name>
@@ -166,6 +168,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>31</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -466,8 +469,8 @@
           <groupfilter function='level-members' level='[none:Pivot Field Names:nk]' />
         </groupfilter>
       </group>
-      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_1e3c9gn12sljb9190d30m1a1s9pz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_0qiq9u007nws7r1da3xwn1gr4tdg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/23/2024 07:06:44 PM' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='felony_counts.csv_2D405587A1B34A43903B480719963C77' table='[Extract].[felony_counts.csv_2D405587A1B34A43903B480719963C77]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59' table='[Extract].[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]' type='table' />
@@ -494,6 +497,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Names</remote-name>
@@ -508,6 +512,7 @@
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Values</remote-name>
@@ -521,6 +526,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>50</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>court_district</remote-name>
@@ -534,6 +540,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Names</remote-name>
@@ -548,6 +555,7 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pivot Field Values</remote-name>
@@ -561,6 +569,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>32</approx-count>
               <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1635,7 +1644,7 @@
       </cards>
       <simple-id uuid='{8B3D0B98-83B3-4B70-92C2-484AFBB5B98F}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 4'>
+    <window class='worksheet' name='Sheet 4'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1692,7 +1701,7 @@
       </cards>
       <simple-id uuid='{513938C9-7E3B-4ACD-B133-C3D5C4AB8349}' />
     </window>
-    <window class='dashboard' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Sheet 1'>
           <zoom type='entire-view' />
