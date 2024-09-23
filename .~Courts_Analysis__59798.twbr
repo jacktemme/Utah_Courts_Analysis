@@ -1,0 +1,1717 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0515.0324                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0515.0324)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.ExternalImageContentForZones.true...ExternalImageContentForZones />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Courts_Analysis' path='/workbooks' revision='2.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='charge_vs_severity' inline='true' name='federated.15pkmxi03s2grp10i8uy30ttgpyg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='charge_vs_severity' name='textscan.0kshekd0ofwyra1ch6vzg10xugvb'>
+            <connection class='textscan' directory='/Users/jacktemme/Desktop/Utah_Courts_Analysis/SQL_Analysis/outputs' filename='charge_vs_severity.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kshekd0ofwyra1ch6vzg10xugvb' name='charge_vs_severity.csv' table='[charge_vs_severity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='uniqueid' ordinal='0' />
+            <column datatype='integer' name='highest_severity_rank' ordinal='1' />
+            <column datatype='integer' name='max_charge' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kshekd0ofwyra1ch6vzg10xugvb' name='charge_vs_severity.csv' table='[charge_vs_severity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='uniqueid' ordinal='0' />
+            <column datatype='integer' name='highest_severity_rank' ordinal='1' />
+            <column datatype='integer' name='max_charge' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[charge_vs_severity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uniqueid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[uniqueid]</local-name>
+            <parent-name>[charge_vs_severity.csv]</parent-name>
+            <remote-alias>uniqueid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highest_severity_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[highest_severity_rank]</local-name>
+            <parent-name>[charge_vs_severity.csv]</parent-name>
+            <remote-alias>highest_severity_rank</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_charge</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[max_charge]</local-name>
+            <parent-name>[charge_vs_severity.csv]</parent-name>
+            <remote-alias>max_charge</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='charge_vs_severity.csv' datatype='table' name='[__tableau_internal_object_id__].[charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399]' role='measure' type='quantitative' />
+      <column caption='Highest Severity Rank' datatype='integer' name='[highest_severity_rank]' role='measure' type='quantitative'>
+        <aliases>
+          <alias key='1' value='Infraction' />
+          <alias key='2' value='Class C Misd.' />
+          <alias key='3' value='Class B Misd.' />
+          <alias key='4' value='Class A Misd.' />
+          <alias key='5' value='3rd Degree Felony' />
+          <alias key='6' value='2nd Degree Felony' />
+          <alias key='7' value='1st Degree Felony' />
+          <alias key='8' value='Capital' />
+        </aliases>
+      </column>
+      <column caption='Max Charge' datatype='integer' name='[max_charge]' role='measure' type='quantitative' />
+      <column caption='Uniqueid' datatype='integer' name='[uniqueid]' role='measure' type='quantitative' />
+      <column-instance column='[highest_severity_rank]' derivation='None' name='[none:highest_severity_rank:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_1h23vol0pvrrx813sgaw30s0wd1y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>uniqueid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[uniqueid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uniqueid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>charge_vs_severity.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>97347</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>highest_severity_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[highest_severity_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>highest_severity_rank</remote-alias>
+              <ordinal>1</ordinal>
+              <family>charge_vs_severity.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_charge</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[max_charge]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_charge</remote-alias>
+              <ordinal>2</ordinal>
+              <family>charge_vs_severity.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:highest_severity_rank:ok]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='charge_vs_severity.csv' id='charge_vs_severity.csv_0079B1CC81CF44A49AA9B32F51BBF399'>
+            <properties context=''>
+              <relation connection='textscan.0kshekd0ofwyra1ch6vzg10xugvb' name='charge_vs_severity.csv' table='[charge_vs_severity#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='uniqueid' ordinal='0' />
+                  <column datatype='integer' name='highest_severity_rank' ordinal='1' />
+                  <column datatype='integer' name='max_charge' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='felony_severity' inline='true' name='federated.1dcsqhz0musjlh102dkun1yxjykw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='felony_severity' name='textscan.00rez7f0idrhau1bakawz02ub160'>
+            <connection class='textscan' directory='/Users/jacktemme/Desktop/Utah_Courts_Analysis/SQL_Analysis/outputs' filename='felony_severity.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot1' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[10+ Charges]' />
+            <value name='[1-3 Charges]' />
+            <value name='[4-6 Charges]' />
+            <value name='[7-9 Charges]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[felony_counts.csv].[charges_10plus]' />
+              <field name='[felony_counts.csv].[charges_1_3]' />
+              <field name='[felony_counts.csv].[charges_4_6]' />
+              <field name='[felony_counts.csv].[charges_7_9]' />
+            </group>
+          </groups>
+          <relation connection='textscan.00rez7f0idrhau1bakawz02ub160' name='felony_counts.csv' table='[felony_counts#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='court_district' ordinal='0' />
+              <column datatype='integer' name='charges_1_3' ordinal='1' />
+              <column datatype='integer' name='charges_4_6' ordinal='2' />
+              <column datatype='integer' name='charges_7_9' ordinal='3' />
+              <column datatype='integer' name='charges_10plus' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation name='Pivot' type='pivot'>
+            <columns>
+              <column datatype='string' name='Pivot Field Names' />
+              <column datatype='integer' name='Pivot Field Values' />
+            </columns>
+            <tag name='Pivot Field Names'>
+              <value name='[1st Degree Felony]' />
+              <value name='[2nd Degree Felony]' />
+              <value name='[3rd Degree Felony]' />
+              <value name='[Capital]' />
+              <value name='[Class A Misdemeanor]' />
+              <value name='[Class B Misdemeanor]' />
+              <value name='[Class C Misdemeanor]' />
+              <value name='[Infraction]' />
+            </tag>
+            <groups>
+              <group name='Pivot Field Values'>
+                <field name='[felony_severity.csv].[count_1st_degree_felony]' />
+                <field name='[felony_severity.csv].[count_2nd_degree_felony]' />
+                <field name='[felony_severity.csv].[count_3rd_degree_felony]' />
+                <field name='[felony_severity.csv].[count_capital]' />
+                <field name='[felony_severity.csv].[count_class_a_misdemeanor]' />
+                <field name='[felony_severity.csv].[count_class_b_misdemeanor]' />
+                <field name='[felony_severity.csv].[count_class_c_misdemeanor]' />
+                <field name='[felony_severity.csv].[count_infraction]' />
+              </group>
+            </groups>
+            <relation connection='textscan.00rez7f0idrhau1bakawz02ub160' name='felony_severity.csv' table='[felony_severity#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='court_district' ordinal='0' />
+                <column datatype='integer' name='count_capital' ordinal='1' />
+                <column datatype='integer' name='count_1st_degree_felony' ordinal='2' />
+                <column datatype='integer' name='count_2nd_degree_felony' ordinal='3' />
+                <column datatype='integer' name='count_3rd_degree_felony' ordinal='4' />
+                <column datatype='integer' name='count_class_a_misdemeanor' ordinal='5' />
+                <column datatype='integer' name='count_class_b_misdemeanor' ordinal='6' />
+                <column datatype='integer' name='count_class_c_misdemeanor' ordinal='7' />
+                <column datatype='integer' name='count_infraction' ordinal='8' />
+              </columns>
+            </relation>
+          </relation>
+          <relation name='Pivot1' type='pivot'>
+            <columns>
+              <column datatype='string' name='Pivot Field Names' />
+              <column datatype='integer' name='Pivot Field Values' />
+            </columns>
+            <tag name='Pivot Field Names'>
+              <value name='[10+ Charges]' />
+              <value name='[1-3 Charges]' />
+              <value name='[4-6 Charges]' />
+              <value name='[7-9 Charges]' />
+            </tag>
+            <groups>
+              <group name='Pivot Field Values'>
+                <field name='[felony_counts.csv].[charges_10plus]' />
+                <field name='[felony_counts.csv].[charges_1_3]' />
+                <field name='[felony_counts.csv].[charges_4_6]' />
+                <field name='[felony_counts.csv].[charges_7_9]' />
+              </group>
+            </groups>
+            <relation connection='textscan.00rez7f0idrhau1bakawz02ub160' name='felony_counts.csv' table='[felony_counts#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='court_district' ordinal='0' />
+                <column datatype='integer' name='charges_1_3' ordinal='1' />
+                <column datatype='integer' name='charges_4_6' ordinal='2' />
+                <column datatype='integer' name='charges_7_9' ordinal='3' />
+                <column datatype='integer' name='charges_10plus' ordinal='4' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Pivot Field Names (Pivot1)]' value='[Pivot1].[Pivot Field Names]' />
+          <map key='[Pivot Field Names]' value='[Pivot].[Pivot Field Names]' />
+          <map key='[Pivot Field Values (Pivot1)]' value='[Pivot1].[Pivot Field Values]' />
+          <map key='[Pivot Field Values]' value='[Pivot].[Pivot Field Values]' />
+          <map key='[court_district (felony_counts.csv)]' value='[felony_counts.csv].[court_district]' />
+          <map key='[court_district]' value='[felony_severity.csv].[court_district]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[felony_severity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[felony_counts.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>court_district</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[court_district]</local-name>
+            <parent-name>[felony_severity.csv]</parent-name>
+            <remote-alias>court_district</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>court_district</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[court_district (felony_counts.csv)]</local-name>
+            <parent-name>[felony_counts.csv]</parent-name>
+            <remote-alias>court_district</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names (Pivot1)]</local-name>
+            <parent-name>[Pivot1]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values (Pivot1)]</local-name>
+            <parent-name>[Pivot1]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of Charges' datatype='string' name='[Pivot Field Names (Pivot1)]' role='dimension' type='nominal' />
+      <column caption='Violation Severity' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Charges' datatype='integer' name='[Pivot Field Values (Pivot1)]' role='measure' type='quantitative' />
+      <column caption='Violations' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='felony_counts.csv' datatype='table' name='[__tableau_internal_object_id__].[felony_counts.csv_2D405587A1B34A43903B480719963C77]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='felony_severity.csv' datatype='table' name='[__tableau_internal_object_id__].[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]' role='measure' type='quantitative' />
+      <column caption='Court District ' datatype='integer' name='[court_district (felony_counts.csv)]' role='measure' type='quantitative' />
+      <column caption='Court District' datatype='integer' name='[court_district]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Names (Pivot1)]' derivation='None' name='[none:Pivot Field Names (Pivot1):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[court_district]' derivation='None' name='[none:court_district:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[court_district (felony_counts.csv)]' derivation='Sum' name='[sum:court_district (felony_counts.csv):qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Court District,Violation Severity)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:court_district:ok]' />
+          <groupfilter function='level-members' level='[none:Pivot Field Names:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/zg/4brng8w568j1m9x6tsv0dhrc0000gn/T/tableau-temp/#TableauTemp_1e3c9gn12sljb9190d30m1a1s9pz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='felony_counts.csv_2D405587A1B34A43903B480719963C77' table='[Extract].[felony_counts.csv_2D405587A1B34A43903B480719963C77]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59' table='[Extract].[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]' type='table' />
+            <relation name='felony_counts.csv_2D405587A1B34A43903B480719963C77' table='[Extract].[felony_counts.csv_2D405587A1B34A43903B480719963C77]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Pivot Field Names (Pivot1)]' value='[felony_counts.csv_2D405587A1B34A43903B480719963C77].[Pivot Field Names]' />
+            <map key='[Pivot Field Names]' value='[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59].[Pivot Field Names]' />
+            <map key='[Pivot Field Values (Pivot1)]' value='[felony_counts.csv_2D405587A1B34A43903B480719963C77].[Pivot Field Values]' />
+            <map key='[Pivot Field Values]' value='[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59].[Pivot Field Values]' />
+            <map key='[court_district (felony_counts.csv)]' value='[felony_counts.csv_2D405587A1B34A43903B480719963C77].[court_district]' />
+            <map key='[court_district]' value='[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59].[court_district]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>court_district</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[court_district]</local-name>
+              <parent-name>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</parent-name>
+              <remote-alias>court_district</remote-alias>
+              <ordinal>0</ordinal>
+              <family>felony_severity.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>court_district</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[court_district (felony_counts.csv)]</local-name>
+              <parent-name>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</parent-name>
+              <remote-alias>court_district</remote-alias>
+              <ordinal>3</ordinal>
+              <family>felony_counts.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names (Pivot1)]</local-name>
+              <parent-name>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pivot1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values (Pivot1)]</local-name>
+              <parent-name>[felony_counts.csv_2D405587A1B34A43903B480719963C77]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Pivot1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1dcsqhz0musjlh102dkun1yxjykw].[sum:avg_charges:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district (felony_counts.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1dcsqhz0musjlh102dkun1yxjykw].[sum:court_district (felony_counts.csv):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Values:ok]' palette='tableau-20' type='palette'>
+            <map to='#17becf'>
+              <bucket>196</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>2073</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>340</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>2638</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>600</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>4927</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#7f7f7f'>
+              <bucket>1701</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>752</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>702</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>9747</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>667</bucket>
+            </map>
+            <map to='#98df8a'>
+              <bucket>6452</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>297</bucket>
+            </map>
+            <map to='#9edae5'>
+              <bucket>2302</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>379</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>2673</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>160</bucket>
+            </map>
+            <map to='#bcbd22'>
+              <bucket>1934</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#c49c94'>
+              <bucket>877</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>736</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>24002</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>119</bucket>
+            </map>
+            <map to='#c7c7c7'>
+              <bucket>1706</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>670</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>8443</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>173</bucket>
+            </map>
+            <map to='#dbdb8d'>
+              <bucket>1990</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>1182</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>98</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>1646</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>584</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>2883</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>700</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>8800</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>591</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>3115</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Names (Pivot1):nk]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;1-3 Charges&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;4-6 Charges&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;7-9 Charges&quot;</bucket>
+            </map>
+            <map to='#ffbb78'>
+              <bucket>&quot;10+ Charges&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Pivot Field Names:nk]' palette='tableau-20' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;2nd Degree Felony&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;3rd Degree Felony&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;Class A Misdemeanor&quot;</bucket>
+            </map>
+            <map to='#aec7e8'>
+              <bucket>&quot;1st Degree Felony&quot;</bucket>
+            </map>
+            <map to='#c5b0d5'>
+              <bucket>&quot;Class B Misdemeanor&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;Capital&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;Class C Misdemeanor&quot;</bucket>
+            </map>
+            <map to='#ff9896'>
+              <bucket>&quot;Infraction&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='felony_counts.csv' id='felony_counts.csv_2D405587A1B34A43903B480719963C77'>
+            <properties context=''>
+              <relation name='Pivot1' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[10+ Charges]' />
+                  <value name='[1-3 Charges]' />
+                  <value name='[4-6 Charges]' />
+                  <value name='[7-9 Charges]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[felony_counts.csv].[charges_10plus]' />
+                    <field name='[felony_counts.csv].[charges_1_3]' />
+                    <field name='[felony_counts.csv].[charges_4_6]' />
+                    <field name='[felony_counts.csv].[charges_7_9]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.00rez7f0idrhau1bakawz02ub160' name='felony_counts.csv' table='[felony_counts#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='court_district' ordinal='0' />
+                    <column datatype='integer' name='charges_1_3' ordinal='1' />
+                    <column datatype='integer' name='charges_4_6' ordinal='2' />
+                    <column datatype='integer' name='charges_7_9' ordinal='3' />
+                    <column datatype='integer' name='charges_10plus' ordinal='4' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='felony_counts.csv_2D405587A1B34A43903B480719963C77' table='[Extract].[felony_counts.csv_2D405587A1B34A43903B480719963C77]' type='table' />
+            </properties>
+          </object>
+          <object caption='felony_severity.csv' id='felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[1st Degree Felony]' />
+                  <value name='[2nd Degree Felony]' />
+                  <value name='[3rd Degree Felony]' />
+                  <value name='[Capital]' />
+                  <value name='[Class A Misdemeanor]' />
+                  <value name='[Class B Misdemeanor]' />
+                  <value name='[Class C Misdemeanor]' />
+                  <value name='[Infraction]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[felony_severity.csv].[count_1st_degree_felony]' />
+                    <field name='[felony_severity.csv].[count_2nd_degree_felony]' />
+                    <field name='[felony_severity.csv].[count_3rd_degree_felony]' />
+                    <field name='[felony_severity.csv].[count_capital]' />
+                    <field name='[felony_severity.csv].[count_class_a_misdemeanor]' />
+                    <field name='[felony_severity.csv].[count_class_b_misdemeanor]' />
+                    <field name='[felony_severity.csv].[count_class_c_misdemeanor]' />
+                    <field name='[felony_severity.csv].[count_infraction]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.00rez7f0idrhau1bakawz02ub160' name='felony_severity.csv' table='[felony_severity#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='court_district' ordinal='0' />
+                    <column datatype='integer' name='count_capital' ordinal='1' />
+                    <column datatype='integer' name='count_1st_degree_felony' ordinal='2' />
+                    <column datatype='integer' name='count_2nd_degree_felony' ordinal='3' />
+                    <column datatype='integer' name='count_3rd_degree_felony' ordinal='4' />
+                    <column datatype='integer' name='count_class_a_misdemeanor' ordinal='5' />
+                    <column datatype='integer' name='count_class_b_misdemeanor' ordinal='6' />
+                    <column datatype='integer' name='count_class_c_misdemeanor' ordinal='7' />
+                    <column datatype='integer' name='count_infraction' ordinal='8' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59' table='[Extract].[felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[court_district]' />
+              <expression op='[court_district (felony_counts.csv)]' />
+            </expression>
+            <first-end-point object-id='felony_severity.csv_4ACF28139DCE4FFF8ED35E0105F8DD59' />
+            <second-end-point object-id='felony_counts.csv_2D405587A1B34A43903B480719963C77' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#1b1b1b' fontsize='13'>Highest Violations in Felony Cases by Court District (Misdeameanor Charges )</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='felony_severity' name='federated.1dcsqhz0musjlh102dkun1yxjykw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsqhz0musjlh102dkun1yxjykw'>
+            <column caption='Violation Severity' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Violations' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column caption='Court District' datatype='integer' name='[court_district]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[court_district]' derivation='None' name='[none:court_district:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[pcto:sum:Pivot Field Values:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Class A Misdemeanor&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Class B Misdemeanor&quot;' />
+              <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Class C Misdemeanor&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Infraction&quot;</bucket>
+              <bucket>&quot;Class C Misdemeanor&quot;</bucket>
+              <bucket>&quot;Class B Misdemeanor&quot;</bucket>
+              <bucket>&quot;Class A Misdemeanor&quot;</bucket>
+              <bucket>&quot;1st Degree Felony&quot;</bucket>
+              <bucket>&quot;2nd Degree Felony&quot;</bucket>
+              <bucket>&quot;3rd Degree Felony&quot;</bucket>
+              <bucket>&quot;Capital&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2</bucket>
+              <bucket>3</bucket>
+              <bucket>7</bucket>
+              <bucket>1</bucket>
+              <bucket>6</bucket>
+              <bucket>5</bucket>
+              <bucket>4</bucket>
+              <bucket>8</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' scope='rows' value='% of Misdemeanors' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='total-label' data-class='subtotal' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]' value='Court District' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]' value='10' />
+            <format attr='font-family' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' value='Tableau Book' />
+            <format attr='font-weight' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' value='bold' />
+            <format attr='color' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' value='#666666' />
+            <format attr='font-size' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='color' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Court District:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Violation Severity:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Violation in All Misdemeanors:	</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]</cols>
+      </table>
+      <simple-id uuid='{F3576943-E1E2-460E-9F16-3390559962C9}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='13'>Highest Violations in Felony Cases by Court District (Felony Charges)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='felony_severity' name='federated.1dcsqhz0musjlh102dkun1yxjykw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsqhz0musjlh102dkun1yxjykw'>
+            <column caption='Violation Severity' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Violations' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column caption='Court District' datatype='integer' name='[court_district]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[court_district]' derivation='None' name='[none:court_district:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[pcto:sum:Pivot Field Values:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Pivot Field Values])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;1st Degree Felony&quot;' />
+                  <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;2nd Degree Felony&quot;' />
+                  <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;3rd Degree Felony&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' direction='DESC' using='[federated.1dcsqhz0musjlh102dkun1yxjykw].[sum:Pivot Field Values:qk]' />
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>1</bucket>
+              <bucket>3</bucket>
+              <bucket>4</bucket>
+              <bucket>8</bucket>
+              <bucket>2</bucket>
+              <bucket>6</bucket>
+              <bucket>5</bucket>
+              <bucket>7</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk:3]' scope='rows' value='% of  Felonies' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk:3]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Court District:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Violation Severity:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Violation in All Felonies:	</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk:3]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk:3]</rows>
+        <cols>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]</cols>
+      </table>
+      <simple-id uuid='{11E0E36E-ADC2-4F6D-B325-1FE28766EFC2}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='felony_severity' name='federated.1dcsqhz0musjlh102dkun1yxjykw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsqhz0musjlh102dkun1yxjykw'>
+            <column caption='Violation Severity' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Violations' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column caption='Court District' datatype='integer' name='[court_district]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+            <column-instance column='[court_district]' derivation='None' name='[none:court_district:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[pcto:sum:Pivot Field Values:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Pivot Field Names:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Capital&quot;' />
+                <groupfilter function='member' level='[none:Pivot Field Names:nk]' member='&quot;Infraction&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Class C Misdemeanor&quot;</bucket>
+              <bucket>&quot;Class B Misdemeanor&quot;</bucket>
+              <bucket>&quot;Class A Misdemeanor&quot;</bucket>
+              <bucket>&quot;3rd Degree Felony&quot;</bucket>
+              <bucket>&quot;2nd Degree Felony&quot;</bucket>
+              <bucket>&quot;1st Degree Felony&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values:qk]</rows>
+        <cols>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district:ok]</cols>
+      </table>
+      <simple-id uuid='{125E56D7-28A6-4763-8D9C-992549F6663A}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='13'>Amount of Charges in Felony Cases by Court District</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='felony_severity' name='federated.1dcsqhz0musjlh102dkun1yxjykw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dcsqhz0musjlh102dkun1yxjykw'>
+            <column caption='Number of Charges' datatype='string' name='[Pivot Field Names (Pivot1)]' role='dimension' type='nominal' />
+            <column caption='Charges' datatype='integer' name='[Pivot Field Values (Pivot1)]' role='measure' type='quantitative' />
+            <column caption='Court District ' datatype='integer' name='[court_district (felony_counts.csv)]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Names (Pivot1)]' derivation='None' name='[none:Pivot Field Names (Pivot1):nk]' pivot='key' type='nominal' />
+            <column-instance column='[court_district (felony_counts.csv)]' derivation='None' name='[none:court_district (felony_counts.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values (Pivot1)]' derivation='Sum' name='[pcto:sum:Pivot Field Values (Pivot1):qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;0-3 Charges&quot;</bucket>
+              <bucket>&quot;1-3 Charges&quot;</bucket>
+              <bucket>&quot;4-6 Charges&quot;</bucket>
+              <bucket>&quot;7-9 Charges&quot;</bucket>
+              <bucket>&quot;10+ Charges&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district (felony_counts.csv):ok]' direction='ASC'>
+            <dictionary>
+              <bucket>1</bucket>
+              <bucket>6</bucket>
+              <bucket>4</bucket>
+              <bucket>7</bucket>
+              <bucket>5</bucket>
+              <bucket>8</bucket>
+              <bucket>3</bucket>
+              <bucket>2</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values (Pivot1):qk:2]' scope='rows' value='% of Charge Amounts' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district (felony_counts.csv):ok]' value='10' />
+            <format attr='font-weight' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values (Pivot1):qk:2]' value='bold' />
+            <format attr='font-size' field='[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values (Pivot1):qk:2]' value='9' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Court District :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district (felony_counts.csv):ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Charges:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Charge Amounts for Total Cases:	</run>
+                <run bold='true'><![CDATA[<[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values (Pivot1):qk:2]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#998f8c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dcsqhz0musjlh102dkun1yxjykw].[pcto:sum:Pivot Field Values (Pivot1):qk:2]</rows>
+        <cols>[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:court_district (felony_counts.csv):ok]</cols>
+      </table>
+      <simple-id uuid='{DF13271D-C69D-4712-A629-AA6AE09C1673}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='13'>Average Number of Charges for Violation Severity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='charge_vs_severity' name='federated.15pkmxi03s2grp10i8uy30ttgpyg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15pkmxi03s2grp10i8uy30ttgpyg'>
+            <column-instance column='[max_charge]' derivation='Avg' name='[avg:max_charge:qk]' pivot='key' type='quantitative' />
+            <column caption='Highest Severity Rank' datatype='integer' name='[highest_severity_rank]' role='measure' type='quantitative'>
+              <aliases>
+                <alias key='1' value='Infraction' />
+                <alias key='2' value='Class C Misd.' />
+                <alias key='3' value='Class B Misd.' />
+                <alias key='4' value='Class A Misd.' />
+                <alias key='5' value='3rd Degree Felony' />
+                <alias key='6' value='2nd Degree Felony' />
+                <alias key='7' value='1st Degree Felony' />
+                <alias key='8' value='Capital' />
+              </aliases>
+            </column>
+            <column caption='Max Charge' datatype='integer' name='[max_charge]' role='measure' type='quantitative' />
+            <column-instance column='[highest_severity_rank]' derivation='None' name='[none:highest_severity_rank:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:highest_severity_rank:ok]' />
+              <groupfilter function='member' level='[none:highest_severity_rank:ok]' member='0' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[avg:max_charge:qk]' scope='rows' value='Avg. # of Charges' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' value='-90' />
+            <format attr='font-weight' field='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' value='bold' />
+            <format attr='font-weight' field='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[avg:max_charge:qk]' value='bold' />
+            <format attr='font-size' field='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' value='9' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Highest Severity Rank:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg. Number of Charges:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.15pkmxi03s2grp10i8uy30ttgpyg].[avg:max_charge:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.15pkmxi03s2grp10i8uy30ttgpyg].[avg:max_charge:qk]</rows>
+        <cols>[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]</cols>
+      </table>
+      <simple-id uuid='{D079910D-4EE6-4624-8A1E-6E6869165EE6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1060' maxwidth='1220' sizing-mode='range' />
+      <zones>
+        <zone forceUpdate='true' h='4878' id='11' type-v2='text' w='11803' x='13279' y='94865'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='15533' id='13' type-v2='text' w='67541' x='2787' y='642'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='20'>Does the Severity and Number of Charges for Felony Court Cases Vary by Utah Court Districts (2019 - 2023)?</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4621' id='14' type-v2='text' w='17951' x='79016' y='3723'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Court District Map</run>
+          </formatted-text>
+        </zone>
+        <zone h='36457' id='21' name='Sheet 4' w='28689' x='2869' y='58793' />
+        <zone h='12965' id='22' name='Sheet 4' pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]' type-v2='color' w='10082' x='33279' y='73042' />
+        <zone forceUpdate='true' h='46213' id='23' type-v2='text' w='23689' x='75656' y='52503'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Analysis</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://www.utcourts.gov/content/dam/mediation/rd/statemapbydist.gif' h='41463' id='24' is-scaled='1' type-v2='bitmap' w='23197' x='76393' y='8858' />
+        <zone h='39281' id='49' name='Sheet 1' w='29098' x='2131' y='16560' />
+        <zone h='39153' id='72' name='Sheet 5' w='29672' x='45082' y='59692' />
+        <zone forceUpdate='true' h='4878' id='73' type-v2='text' w='11803' x='12459' y='54814'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4878' id='75' type-v2='text' w='11803' x='56066' y='55071'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+          </formatted-text>
+        </zone>
+        <zone h='39024' id='76' name='Sheet 2' w='29836' x='44590' y='16816' />
+        <zone h='1412' id='77' name='Sheet 3' w='656' x='42869' y='54685' />
+        <zone h='26829' id='78' name='Sheet 3' pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' type-v2='color' w='13852' x='31885' y='29525' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2300' minheight='2300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='96' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97946' id='95' param='vert' type-v2='layout-flow' w='98688' x='656' y='1027'>
+                <zone forceUpdate='true' h='15533' id='13' type-v2='text' w='67541' x='2787' y='642'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='20'>Does the Severity and Number of Charges for Felony Court Cases Vary by Utah Court Districts (2019 - 2023)?</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4621' id='14' type-v2='text' w='17951' x='79016' y='3723'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Court District Map</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.ExternalImageContentForZones.true...image-file-url='https://www.utcourts.gov/content/dam/mediation/rd/statemapbydist.gif' fixed-size='280' h='41463' id='24' is-fixed='true' is-scaled='1' type-v2='bitmap' w='23197' x='76393' y='8858'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39281' id='49' is-fixed='true' name='Sheet 1' w='29098' x='2131' y='16560'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39024' id='76' is-fixed='true' name='Sheet 2' w='29836' x='44590' y='16816'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='46213' id='23' type-v2='text' w='23689' x='75656' y='52503'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='1412' id='77' is-fixed='true' name='Sheet 3' w='656' x='42869' y='54685'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='26829' id='78' name='Sheet 3' pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' type-v2='color' w='13852' x='31885' y='29525'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4878' id='73' type-v2='text' w='11803' x='12459' y='54814'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4878' id='75' type-v2='text' w='11803' x='56066' y='55071'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36457' id='21' is-fixed='true' name='Sheet 4' w='28689' x='2869' y='58793'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12965' id='22' name='Sheet 4' pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]' type-v2='color' w='10082' x='33279' y='73042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39153' id='72' is-fixed='true' name='Sheet 5' w='29672' x='45082' y='59692'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4878' id='11' type-v2='text' w='11803' x='13279' y='94865'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000'>Court District</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{03F9F932-A9F7-4A88-A9FC-3CF254F8E1D8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CB65C0E8-F1F6-426C-BE28-0954F478FD3E}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0674F52A-28B5-4A9D-B601-022AB966CB3B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B3D0B98-83B3-4B70-92C2-484AFBB5B98F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dcsqhz0musjlh102dkun1yxjykw].[none:Pivot Field Names (Pivot1):nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4BD7C96-1704-4850-A4A6-1A1A7121A62D}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.15pkmxi03s2grp10i8uy30ttgpyg].[none:highest_severity_rank:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{513938C9-7E3B-4ACD-B133-C3D5C4AB8349}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='24' />
+      <simple-id uuid='{2764CD0B-4C72-41ED-BF70-4FE8BB075A68}' />
+    </window>
+  </windows>
+</workbook>
