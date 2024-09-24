@@ -61,7 +61,8 @@ ORDER BY ca.court_district ASC;
 
 
 
--- Query the max violation and the max charge number for each case
+-- Side Question:
+--Query the max violation and the max charge number for each case
 
 WITH ranked_charges AS (
     SELECT uniqueid,
